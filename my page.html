@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>개인페이지_원채빈</title>
+    <style>
+        div {
+            text-align: center;
+        }
+
+        .intro>img {
+            padding-top: 30px;
+        }
+
+        .card1 {
+            padding-top: 20px;
+            float: left;
+            margin-left: 600px;
+            border-radius: 50px;
+            overflow: hidden;
+        }
+
+        .card2 {
+            padding-top: 20px;
+            float: right;
+            margin-right: 600px;
+            border-radius: 50px;
+            overflow: hidden;
+        }
+
+        .drop_btn {
+            background-color: cornflowerblue;
+            border: none;
+            padding: 16px;
+            font-size: 16px;
+            color: #fff;
+            cursor: pointer
+        }
+
+        .dropdown {
+            position: relative;
+            display: inline-block
+        }
+
+        .dropdown_cont {
+            display: none;
+            min-width: 300px;
+            position: absolute;
+            z-index: 1;
+            background-color: #f9f9f9;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2)
+        }
+
+        .dropdown_link {
+            display: block;
+            padding: 12px 16px;
+            color: black;
+            text-decoration: none
+        }
+
+        .dropdown_link:hover {
+            background-color: #f1f1f1
+        }
+
+        .dropdown:hover .dropdown_cont {
+            display: block
+        }
+
+        .dropdown:hover .drop_btn {
+            background-color: cornflowerblue
+        }
+
+        .gallery {
+            max-width: 500px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        img {
+            max-width: 100%;
+            max-height: 300px;
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+
+        img:hover {
+            transform: scale(1.1);
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="row">
+        <div class="col-lg-4">
+            <h2><span style="color:cornflowerblue">ABOUT ME</span></h2>
+        </div>
+        <div class="intro">
+            <hr class="featurette-divider">
+            <img src="https://blogpfthumb-phinf.pstatic.net/MjAyMTEyMDRfMTgz/MDAxNjM4NjIzMTExODQ0.4uPuMCC9HJPNwRw3T9HpIFA9yI3nytFHVt7RSEwk4bEg.ypozVdXL23xrxCs6LxE-LnSGv8ezXVOnlirM5E8Hb_gg.JPEG.usan119/profileImage.jpg?type=w161"
+                class="rounded mx-auto d-block" alt="원채빈" width="250" height="250">
+
+        </div>
+        <h3 class="fw-normal"><span style="color:cornflowerblue">이름</span> 원채빈</h3>
+        <h3 class="fw-normal"><span style="color:cornflowerblue">MBTI</span> INFJ</h3>
+        <h3 class="fw-normal"><span style="color:cornflowerblue">취미</span> 게임, 음악듣기</h3>
+        <div class="dropdown">
+            <button class="drop_btn">BLOG</button>
+            <div class="dropdown_cont">
+                <a href="#" class="dropdown_link"><a
+                        href="https://usan119.tistory.com/">https://usan119.tistory.com/</a></a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="drop_btn">더 알고싶다면</button>
+            <div class="dropdown_cont">
+                <a href="#" class="dropdown_link">두 마리의 강아지와 함께 살고있어요! 첫째 강아지는 구찌고 둘째 강아지는 몽실이라 합쳐서 몽구찌라고 불러요! 쉬는 날에는 주로 스팀게임을 하며 시간을 보내는데 요즘은 이터널리턴에 푹 빠져있습니다!</a>
+            </div>
+        </div>
+        <h4><span style="color:cornflowerblue">💙내가 좋아하는 것들💙</span></h4>
+  <div class="gallery" id="gallery">
+    <img src="https://postfiles.pstatic.net/MjAyNDEwMjdfOTcg/MDAxNzI5OTgzNDQyOTg2.cH2h_VANkBDYKem1tXTRsnukBeu-On9Br_o-I3Mi0Qgg.MaxJ-ASpYrXZWabLKSp6cnyHWlNuCHiBUsDAyF6LhJAg.JPEG/20241026%EF%BC%BF152411.jpg?type=w386" onclick="showNextImage()" />
+    <img src="https://postfiles.pstatic.net/MjAyNDEwMjdfMjEy/MDAxNzI5OTgzNDQ0MTg3.NeaQ8L4v5JxptchYZDGiWBT-q_plL9tJq3zOm5h4TqMg.y9sboT3l7vgBc-ex3-8x0B8C5sdxJAOnmJxoaNfnzb4g.JPEG/20241026%EF%BC%BF152520.jpg?type=w386" onclick="showNextImage()" />
+    <img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMTA3MTZfMTg1%2FMDAxNjI2NDAyOTU3OTUx.2ibQkUr49tlY0Jc7wlXn6yLmBRoQmfFCPtFCEVQE8hIg.SGOGELy-JTpopBvef2GjDDINhdG583CqOlLcoTnPwIEg.JPEG.meniereman%2F%25C0%25CC%25C5%25CD%25B3%25CE_%25B8%25AE%25C5%25CF_%25C4%25B3%25B8%25AF%25C5%25CD_%25C3%25DF%25C3%25B5_01.jpg&type=a340" onclick="showNextImage()" />
+  </div>
+
+  <script>
+    const images = document.querySelectorAll('.gallery img');
+    let currentIndex = 0;
+
+    function showNextImage() {
+      images[currentIndex].style.display = 'none';
+      currentIndex = (currentIndex + 1) % images.length;
+      images[currentIndex].style.display = 'block';
+    }
+
+    // 처음에 첫 번째 이미지만 보이도록 설정
+    for (let i = 1; i < images.length; i++) {
+      images[i].style.display = 'none';
+    }
+  </script>
+    </div><!-- /.col-lg-4 -->
+
+    </div>
+
+</body>
+
+</html>
