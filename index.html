@@ -90,6 +90,30 @@
         img:hover {
             transform: scale(1.1);
         }
+
+        .home-page {
+            margin-top: 30px;
+           float: right;
+
+        }
+
+        .home-button {
+            display: inline-block;
+            text-decoration: none;
+            margin-top: 20px;
+        }
+
+        .home-button img {
+            width: 50px;
+            /* 이미지 크기 */
+            height: 50px;
+            transition: transform 0.3s ease;
+        }
+
+        .home-button img:hover {
+            transform: scale(1.2);
+            /* 마우스 호버시 크기 확대 */
+        }
     </style>
 
 </head>
@@ -127,6 +151,12 @@
     <img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyNDEwMjdfMjEy%2FMDAxNzI5OTgzNDQ1MzE2.nw7WBou4UtOEn3S6KEaVszzZ5oITeDvL1iYEjENj758g.sIqcZyxIaWz4y0IV365ZV6kiDCwQ9J1KOdqf8rp3eY4g.JPEG%2F1729928455375.jpg&type=a340" onclick="showNextImage()" />
     <img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMTA3MTZfMTg1%2FMDAxNjI2NDAyOTU3OTUx.2ibQkUr49tlY0Jc7wlXn6yLmBRoQmfFCPtFCEVQE8hIg.SGOGELy-JTpopBvef2GjDDINhdG583CqOlLcoTnPwIEg.JPEG.meniereman%2F%25C0%25CC%25C5%25CD%25B3%25CE_%25B8%25AE%25C5%25CF_%25C4%25B3%25B8%25AF%25C5%25CD_%25C3%25DF%25C3%25B5_01.jpg&type=a340" onclick="showNextImage()" />
   </div>
+
+<div class="home-page">
+        <a href="https://seung-min-88.github.io/Home/" class="home-button">
+            <img src="https://img.icons8.com/?size=100&id=EkVS0vhJIaAl&format=png&color=000000" alt="홈 버튼" />
+        </a>
+    </div>
 
   <script>
     const images = document.querySelectorAll('.gallery img');
