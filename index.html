@@ -101,15 +101,43 @@
             transform: scale(1.2);
             /* 마우스 호버시 크기 확대 */
         }
+
+         .header{
+            display: flex; 
+            align-items: center;
+        }
+
+        .header > h2{
+            flex:1; 
+            text-align: center; 
+            margin: 0;
+        }
     </style>
 
 </head>
 
 <body>
     <div class="row">
-        <div class="col-lg-4">
-            <h2><span style="color:cornflowerblue">ABOUT ME</span></h2>
+
+        <div class="header">
+
+            <div class="home-page" style="visibility: hidden;">
+                <a href="https://seung-min-88.github.io/Home/" class="home-button">
+                    <img src="https://img.icons8.com/?size=100&id=EkVS0vhJIaAl&format=png&color=000000" alt="홈 버튼" />
+                </a>
+            </div>
+            
+            <h2>
+                <span style="color:cornflowerblue">ABOUT ME</span></h2>
+
+            <div class="home-page">
+                <a href="https://seung-min-88.github.io/Home/" class="home-button">
+                    <img src="https://img.icons8.com/?size=100&id=EkVS0vhJIaAl&format=png&color=000000" alt="홈 버튼" />
+                </a>
+            </div>
+
         </div>
+        
         <div class="intro">
             <hr class="featurette-divider">
             <img src="https://blogpfthumb-phinf.pstatic.net/MjAyMTEyMDRfMTgz/MDAxNjM4NjIzMTExODQ0.4uPuMCC9HJPNwRw3T9HpIFA9yI3nytFHVt7RSEwk4bEg.ypozVdXL23xrxCs6LxE-LnSGv8ezXVOnlirM5E8Hb_gg.JPEG.usan119/profileImage.jpg?type=w161"
